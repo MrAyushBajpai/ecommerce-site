@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Product Page</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header><div id="navbar"></div></header>
+
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-3 mb-3">
+                  <img
+                    src="https://via.placeholder.com/500"
+                    class="img-fluid"
+                    alt="Product Image"
+                    onclick="document.getElementById('product-image').src='product-image-1.jpg';"
+                  />
+                </div>
+                <div class="col-md-3 mb-3">
+                  <img
+                    src="https://via.placeholder.com/500"
+                    class="img-fluid"
+                    alt="Product Image"
+                    onclick="document.getElementById('product-image').src='product-image-2.jpg';"
+                  />
+                </div>
+                <div class="col-md-3 mb-3">
+                  <img
+                    src="https://via.placeholder.com/500"
+                    class="img-fluid"
+                    alt="Product Image"
+                    onclick="document.getElementById('product-image').src='product-image-3.jpg';"
+                  />
+                </div>
+                <div class="col-md-3 mb-3">
+                  <img
+                    src="https://via.placeholder.com/500"
+                    class="img-fluid"
+                    alt="Product Image"
+                    onclick="document.getElementById('product-image').src='product-image-4.jpg';"
+                  />
+                </div>
+              </div>
+              <img
+                src="https://via.placeholder.com/500"
+                class="img-fluid"
+                alt="Product Image"
+                id="product-image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 text-md-end">
+          <h2 class="mb-3">Product Name</h2>
+          <hr />
+          <p class="discount">-20% <span class="price">$79.99 </span></p>
+          <p
+            class="fw-bold text-decoration-line-through text-muted original-price"
+          >
+            MRP $99.99
+          </p>
+        </div>
+
+        <div class="container my-5">
+          <h3 class="mb-4">Customer Reviews</h3>
+          <form>
+            <div class="form-group">
+              <label for="rating">Rate this product:</label>
+              <select class="form-control" id="rating" name="rating">
+                <option value="5">5 stars</option>
+                <option value="4">4 stars</option>
+                <option value="3">3 stars</option>
+                <option value="2">2 stars</option>
+                <option value="1">1 star</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="comment">Leave a comment:</label>
+              <textarea
+                class="form-control"
+                id="comment"
+                rows="3"
+                name="comment"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+
+          <hr />
+
+          <div class="my-4">
+            <div class="d-flex">
+              <div class="flex-shrink-0">
+                <img
+                  src="https://via.placeholder.com/50"
+                  alt="User avatar"
+                  class="rounded-circle"
+                />
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <h5 class="mb-0">John Doe</h5>
+                <p class="text-muted">3 stars - 5 days ago</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  in eleifend magna, eget vulputate odio. Donec at rhoncus ex,
+                  nec volutpat risus. Duis malesuada velit a eros tristique
+                  dictum.
+                </p>
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="d-flex">
+              <div class="flex-shrink-0">
+                <img
+                  src="https://via.placeholder.com/50"
+                  alt="User avatar"
+                  class="rounded-circle"
+                />
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <h5 class="mb-0">Jane Doe</h5>
+                <p class="text-muted">5 stars - 2 weeks ago</p>
+                <p>
+                  Etiam pharetra nibh non ipsum consectetur efficitur. Sed
+                  euismod vitae sapien sed aliquam. Nam fermentum ante vel ante
+                  molestie, eu sagittis orci finibus. Aenean in magna ut elit
+                  blandit porttitor vel ut massa. Vivamus quis diam id leo
+                  tristique ultrices. Praesent ac pharetra libero.
+                </p>
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="d-flex">
+              <div class="flex-shrink-0">
+                <img
+                  src="https://via.placeholder.com/50"
+                  alt="User avatar"
+                  class="rounded-circle"
+                />
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <h5 class="mb-0">Mike Smith</h5>
+                <p class="text-muted">4 stars - 1 month ago</p>
+                <p>
+                  Aliquam rutrum felis vel magna vehicula, eu consectetur arcu
+                  aliquam. Aliquam blandit arcu nec velit laoreet, vitae
+                  consequat nunc tincidunt. Sed at sapien metus. Integer
+                  fermentum, purus vel congue porttitor, erat odio laoreet elit,
+                  a congue nibh massa at magna.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/navbar-loader.js"></script>
+  </body>
+</html>
