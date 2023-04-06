@@ -1,9 +1,7 @@
 :root {
   --primary-color: #000;
-}
-
-:root {
   --secondary-color: #ffe5b4;
+  --tertiary-color: #800080;
 }
 
 html,
@@ -63,10 +61,25 @@ body {
   border: none;
 }
 
+.btn-shop {
+  font-size: 1rem;
+  padding: 1rem 3.5rem;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
 .btn-primary:hover {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   border-color: var(--secondary-color);
+}
+
+.btn-primary {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  border-radius: 1rem;
 }
 
 .btn-secondary {
@@ -79,6 +92,10 @@ body {
   background-color: var(--secondary-color);
   color: var(--primary-color);
   border-color: var(--secondary-color);
+}
+
+.button-pair button {
+  margin-right: 1.2em; /* add some right margin to the first button */
 }
 
 .jumbotron {
@@ -115,7 +132,7 @@ body {
   color: var(--primary-color);
 }
 
-.discount{
+.discount {
   font-size: 1.5rem;
   color: red;
 }
